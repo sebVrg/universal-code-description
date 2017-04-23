@@ -1,0 +1,11 @@
+{
+  "name": "minpopup",
+  "version": "0.0.1",
+  "description": "this welcome minpopup",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Christophe CIATTI",
+  "license": "MIT"
+}

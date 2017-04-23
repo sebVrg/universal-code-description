@@ -1,0 +1,28 @@
+{
+    "name": "seeren/container",
+    "description": "Psr 11 implementation, resolve and cache dependencies",
+    "keywords": ["psr-11", "resolver", "provider" ,"container", "dependency-injection"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Cyril Ichti",
+        "email": "consultant@seeren.fr",
+        "homepage" : "http://www.seeren.fr"
+      }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=7.0.1",
+      "psr/container": "1.0.x-dev"
+    },
+    "autoload": {
+      "psr-4": {
+		"Seeren\\Container\\": "src/",
+		"Seeren\\Container\\Test\\": "test/"
+      }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.1"
+    }
+}

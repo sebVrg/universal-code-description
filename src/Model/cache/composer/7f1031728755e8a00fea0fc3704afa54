@@ -1,0 +1,29 @@
+{
+    "name": "seeren/seeren",
+    "description": "A LightWeight PHP7 Framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Cyril Ichti",
+        "email": "consultant@seeren.fr",
+        "homepage" : "http://www.seeren.fr"
+      }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=7.0.1",
+      "seeren/application": "dev-master",
+      "seeren/cache": "dev-master",
+      "seeren/container": "dev-master",
+      "seeren/controller": "dev-master",
+      "seeren/database": "dev-master",
+      "seeren/error": "dev-master",
+      "seeren/http": "dev-master",
+      "seeren/loader": "dev-master",
+      "seeren/log": "dev-master",
+      "seeren/model": "dev-master",
+      "seeren/router": "dev-master",
+      "seeren/view": "dev-master"
+    }
+}

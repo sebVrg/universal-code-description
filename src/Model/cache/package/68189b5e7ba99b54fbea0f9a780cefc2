@@ -1,0 +1,21 @@
+{
+  "name": "minbox",
+  "version": "1.0.2",
+  "description": "A minimal popup",
+  "keywords": ["popup", "prompt", "alert"],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Snub69",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "3.2.0",
+    "chai": "3.5.0",
+    "jsdom": "9.12.0"
+  },
+  "repository" : {
+    "type" : "git",
+	"url" : "https://github.com/Snub69/minbox"
+  }
+}

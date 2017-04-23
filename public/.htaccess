@@ -1,0 +1,8 @@
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+RewriteEngine on
+
+RewriteRule ^([a-zA-Z/]{3,100})$ index.php?repository=$1 [L]

@@ -1,7 +1,8 @@
 {
     "name": "universal-code-description",
-    "description": "Propose an universal interface for code description",
+    "description": "An universal interface for code description",
 	"keywords": ["repository-description", "package-description"],
+	"homepage": "http://universal-code-description.alwaysdata.net/seeren/universal-code-description",
 	"type": "project",
 	"license": "MIT",
     "authors": [

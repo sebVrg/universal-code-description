@@ -13,7 +13,7 @@ Target with a PHP or JS  repository name in uri path like  [seeren/universal-cod
     "vendor": "seeren",
     "repository": "universal-code-description",
     "package": "seeren\/universal-code-description",
-    "description": "Propose an universal interface for code description",
+    "description": "An universal interface for code description",
     "keywords": [
         "repository-description",
         "package-description"

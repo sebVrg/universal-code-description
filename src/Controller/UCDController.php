@@ -66,7 +66,8 @@ class UCDController implements ControllerInterface
      * @return string
      */
     public function execute(): string
-    {        
+    {
+        header("Access-Control-Allow-Origin: *");
         $action = strtolower(filter_input(INPUT_SERVER, "REQUEST_METHOD"));
         if (!method_exists($this->model, $action)) {
             header("HTTP/1.1 405 Method Not Allowed");

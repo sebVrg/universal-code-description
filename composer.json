@@ -1,0 +1,23 @@
+{
+    "name": "universal-code-description",
+    "description": "Propose an universal interface for code description",
+	"keywords": ["repository-description", "package-description"],
+	"type": "project",
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "Cyril",
+            "email": "consultant@seeren.fr"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "UniversalCodeDefinition\\": "src/",
+            "UniversalCodeDefinition\\Test\\": "test/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.1"
+    }
+}

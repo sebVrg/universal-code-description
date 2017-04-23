@@ -70,19 +70,20 @@ class UCDController implements ControllerInterface
         header("Access-Control-Allow-Origin: *");
         $action = strtolower(filter_input(INPUT_SERVER, "REQUEST_METHOD"));
         if (!method_exists($this->model, $action)) {
-            header("HTTP/1.1 405 Method Not Allowed");
+            $header = "HTTP/1.1 405 Method Not Allowed";
         } else if (!$this->isRepository()) {
-            header("HTTP/1.1 412 Precondition failed");
-        } else {
+            $header = "HTTP/1.1 412 Precondition failed";
+        } else if (!isset($header)) {
             try {
+                $header = "HTTP/1.1 200 OK";
                 $this->model->{$action}();
-                header("HTTP/1.1 200 OK");
             } catch (RuntimeException $e) {
-                header("HTTP/1.1 404 No Found");
+                $header = "HTTP/1.1 404 No Found";
             } catch (Throwable $e) {
-                header("HTTP/1.1 500 Internal Server Error");
+                $header = "HTTP/1.1 500 Internal Server Error";
             }
         }
+        header($header);
         $this->view->update($this->model);
         return $this->view->render();
     }

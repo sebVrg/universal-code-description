@@ -110,18 +110,17 @@ class RepositoryModel extends AbstractSubject implements
     {
         $filename = __DIR__ . "/cache/" . $subdir . "/" . md5($url);
         if (is_file($filename) && filemtime($filename) + 86400 > time()) {
-            $output = file_get_contents($filename);
-        } else {
-            $code = 200;
-            @$output = file_get_contents($url);
-            if (isset($http_response_header)
-             && array_key_exists(0, $http_response_header)) {
-                $explode = explode(" ", $http_response_header[0]);
-                $code = (int) $explode[1];
-            }
-            if (200 === $code) {
-                file_put_contents($filename, $ping ? $url : $output);
-            }
+            return file_get_contents($filename);
+        }
+        $code = 200;
+        @$output = file_get_contents($url);
+        if (isset($http_response_header)
+         && array_key_exists(0, $http_response_header)) {
+            $explode = explode(" ", $http_response_header[0]);
+            $code = (int) $explode[1];
+        }
+        if (200 === $code) {
+            file_put_contents($filename, $ping ? $url : $output);
         }
         return $output;
     }
@@ -149,7 +148,7 @@ class RepositoryModel extends AbstractSubject implements
             $this->distribuable = true;
             if (isset($packagist->package)
              && isset($packagist->package->versions)) {
-                foreach ($packagist->package->versions as $key => $value) {
+                foreach (array_keys($packagist->package->versions) as $key) {
                     if ("dev-master" !== $key) {
                         $this->version[] = $key;
                     }

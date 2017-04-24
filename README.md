@@ -1,6 +1,6 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0f8e153fc3254bf9a27d3276f1450c42)](https://www.codacy.com/app/seeren/universal-code-description?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=seeren/universal-code-description&amp;utm_campaign=Badge_Grade) [![Build Status](https://travis-ci.org/seeren/universal-code-description.svg?branch=master)](https://travis-ci.org/seeren/universal-code-description) [![GitHub license](https://img.shields.io/badge/license-MIT-orange.svg)](https://raw.githubusercontent.com/seeren/view/master/LICENSE) [![GitHub tag](https://img.shields.io/github/tag/seeren/universal-code-description.svg)](https://github.com/seeren/universal-code-description/releases)
 
-# UniversalCodeDescription
+# universal-code-description API
 Propose an universal interface for code description.
 
 ## API Demo

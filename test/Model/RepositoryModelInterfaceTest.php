@@ -26,7 +26,7 @@ abstract class RepositoryModelInterfaceTest extends \PHPUnit\Framework\TestCase
         return [
             ["distribuable"],
             ["testable"],
-            ["langage"],
+            ["language"],
             ["vendor"],
             ["repository"],
             ["package"],

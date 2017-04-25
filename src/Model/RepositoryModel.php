@@ -25,7 +25,7 @@ class RepositoryModel extends AbstractSubject implements
         /**
          * @var string
          */
-        $langage,
+        $language,
         /**
          * @var string
          */
@@ -83,7 +83,7 @@ class RepositoryModel extends AbstractSubject implements
         parent::__construct();
         $this->distribuable    = false;
         $this->testable        = false;
-        $this->langage         = "";
+        $this->language         = "";
         $this->vendor          = "";
         $this->repository      = "";
         $this->package         = "";
@@ -168,7 +168,7 @@ class RepositoryModel extends AbstractSubject implements
                  "https://raw.githubusercontent.com/" . $this->package
                . "/master/package.json",
                  "package")))) {
-            $this->langage = "js";
+            $this->language = "js";
             $this->setAvailable($package);
             if (isset($package->dependencies)
              && is_object($package->dependencies)) {
@@ -204,7 +204,7 @@ class RepositoryModel extends AbstractSubject implements
                . $this->package
                . "/master/composer.json",
                  "composer")))) {
-            $this->langage = "php";
+            $this->language = "php";
             $this->setAvailable($composer);
             if (isset($composer->require) && is_object($composer->require)) {
                  foreach ($composer->require as $key => $value) {

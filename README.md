@@ -9,24 +9,26 @@ Target a PHP or JS repository like  [seeren/universal-code-description](http://u
 {
     "distribuable": false,
     "testable": true,
-    "langage": "php",
+    "language": "php",
     "vendor": "seeren",
     "repository": "universal-code-description",
     "package": "seeren\/universal-code-description",
     "description": "An universal interface for code description",
     "keywords": [
+        "api",
+        "api-rest",
         "repository-description",
         "package-description"
     ],
     "type": "project",
-    "homepage": "",
+    "homepage": "http:\/\/universal-code-description.alwaysdata.net\/seeren\/universal-code-description",
     "dependencies": [],
     "devDependencies": [
         "phpunit\/phpunit"
     ],
     "version": [],
     "license": "MIT",
-    "author": "Cyril"
+    "author": "Cyril Ichti"
 }
 ```
 The API provide a short description per repository. Based on package.json or composer.json check if the code is available on nmp or packagist and travis. The hosted demo allow all origins.
